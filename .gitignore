@@ -1,0 +1,105 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+pip-wheel-metadata/
+
+# === Virtual Environments ===
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+python_env/
+.venv.bak/
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+
+# === VSCode / IDEs ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Environment Variables ===
+.env
+.env.*
+*.env
+
+# === Logs & Runtime ===
+*.log
+*.sqlite3
+*.db
+*.pid
+*.gz
+*.log.*
+
+# === Alembic ===
+alembic/versions/*.pyc
+alembic/versions/__pycache__/
+
+# === Pytest ===
+.cache/
+.pytest_cache/
+
+# === mypy & linting ===
+.mypy_cache/
+.dmypy.json
+.pyre/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+*.py,cover
+
+# === Docker ===
+*.tar
+**/.dockerignore
+docker-compose.override.yml
+
+# === Models & Data ===
+*.joblib
+*.pkl
+*.pt
+*.model
+*.csv
+*.xlsx
+models/__pycache__/
+models/*.sav
+
+# === Node/npm (if frontend exists later) ===
+node_modules/
+npm-debug.log*
+
+# === Redis Dump (optional) ===
+dump.rdb
+
+# === SSL Keys (Optional Nginx) ===
+ssl/
+*.crt
+*.key
+
+# === Logs Folder (if created) ===
+logs/
+
+# === FastAPI Swagger UI cache (if applicable) ===
+static/swagger/
+
+# === Spyder IDE ===
+.spyderproject
+.spyproject
+
+# === VS Code launch configuration ===
+.vscode/launch.json
