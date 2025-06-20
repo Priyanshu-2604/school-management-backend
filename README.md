@@ -59,25 +59,13 @@ school_management_backend/
 │   │   ├── teachers.py             # /teachers/effectiveness
 │   │   ├── management.py           # /management/kpis
 │   │   └── voice.py                # /voice/interpret
-│
-├── models/                         # Pre-trained ML models (.pkl, Prophet, etc.)
-│   ├── student_performance_model.pkl
-│   ├── dropout_risk_model.pkl
-│   └── revenue_forecast_model.pkl
-│
-├── tests/                          # Unit tests (pytest)
-│   ├── __init__.py
-│   ├── test_auth.py
-│   ├── test_students.py
-│   ├── test_ml_models.py
-│   └── test_voice.py
-│
-├── Dockerfile                      # Docker build for FastAPI app
-├── docker-compose.yml              # Compose file for API + DB + Redis + Nginx
-├── .env                            # Environment variables (not committed to Git)
-├── .env.template                   # Sample .env to share
-├── requirements.txt                # All Python dependencies
-├── README.md                       # Project documentation
+    │
+    ├── Dockerfile                      # Docker build for FastAPI app
+    ├── docker-compose.yml              # Compose file for API + DB + Redis + Nginx
+    ├── .env                            # Environment variables (not committed to Git)
+    ├── .env.template                   # Sample .env to share
+    ├── requirements.txt                # All Python dependencies
+    ├── README.md                       # Project documentation
 ```
 
 ---
