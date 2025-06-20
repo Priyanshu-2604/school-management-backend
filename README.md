@@ -74,17 +74,11 @@ school_management_backend/
 │
 ├── Dockerfile                      # Docker build for FastAPI app
 ├── docker-compose.yml              # Compose file for API + DB + Redis + Nginx
-├── init.sql                        # Optional DB init script (tables, seed data)
-├── nginx.conf                      # Optional Nginx reverse proxy
 ├── .env                            # Environment variables (not committed to Git)
 ├── .env.template                   # Sample .env to share
 ├── requirements.txt                # All Python dependencies
 ├── README.md                       # Project documentation
-└── alembic.ini                     # Optional: Alembic for DB migrations
 ```
-
-
-
 
 ---
 
