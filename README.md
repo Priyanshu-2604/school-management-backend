@@ -59,13 +59,13 @@ school_management_backend/
 │   │   ├── teachers.py             # /teachers/effectiveness
 │   │   ├── management.py           # /management/kpis
 │   │   └── voice.py                # /voice/interpret
-    │
-    ├── Dockerfile                      # Docker build for FastAPI app
-    ├── docker-compose.yml              # Compose file for API + DB + Redis + Nginx
-    ├── .env                            # Environment variables (not committed to Git)
-    ├── .env.template                   # Sample .env to share
-    ├── requirements.txt                # All Python dependencies
-    ├── README.md                       # Project documentation
+|   │
+|   ├── Dockerfile                      # Docker build for FastAPI app
+|   ├── docker-compose.yml              # Compose file for API + DB + Redis + Nginx
+|   ├── .env                            # Environment variables (not committed to Git)
+|   ├── .env.template                   # Sample .env to share
+|   ├── requirements.txt                # All Python dependencies
+|   ├── README.md                       # Project documentation
 ```
 
 ---
