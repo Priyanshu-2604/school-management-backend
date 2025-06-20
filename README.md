@@ -21,65 +21,65 @@ school_management_backend/
 │
 ├── app/
 │   ├── __init__.py
-│   ├── main.py                       # FastAPI entry point (includes /health)
-│
-│   ├── core/                         # Core logic: settings, security, auth, logging
+│   ├── main.py                     # FastAPI entry point (includes /health)
+│   │
+│   ├── core/                       # Core logic: settings, security, auth, logging
 │   │   ├── __init__.py
-│   │   ├── config.py                 # Loads .env configs
-│   │   ├── auth.py                   # JWT authentication
-│   │   ├── security.py               # Token creation & password utils
-│   │   └── logger.py                 # Structured logging setup
-│
-│   ├── db/                           # Database layer
+│   │   ├── config.py               # Loads .env configs
+│   │   ├── auth.py                 # JWT authentication
+│   │   ├── security.py             # Token creation & password utils
+│   │   └── logger.py               # Structured logging setup
+│   │
+│   ├── db/                         # Database layer
 │   │   ├── __init__.py
-│   │   ├── base.py                   # SQLAlchemy base
-│   │   ├── models.py                 # All DB models
-│   │   ├── session.py                # DB session maker
-│   │   └── seed.py                   # Optional data seed script
-│
-│   ├── schemas/                      # Pydantic models for request/response
+│   │   ├── base.py                 # SQLAlchemy base
+│   │   ├── models.py               # All DB models
+│   │   ├── session.py              # DB session maker
+│   │   └── seed.py                 # Optional data seed script
+│   │
+│   ├── schemas/                    # Pydantic models for request/response
 │   │   ├── __init__.py
 │   │   ├── user.py
 │   │   ├── student.py
 │   │   ├── transaction.py
 │   │   └── report.py
-│
-│   ├── services/                     # Business logic, ML, NLP
+│   │
+│   ├── services/                   # Business logic, ML, NLP
 │   │   ├── __init__.py
-│   │   ├── ml_models.py              # Predict performance, dropout, revenue
-│   │   └── voice_parser.py           # Parse voice commands using spaCy
-│
-│   ├── api/                          # API routes
+│   │   ├── ml_models.py            # Predict performance, dropout, revenue
+│   │   └── voice_parser.py         # Parse voice commands using spaCy
+│   │
+│   ├── api/                        # API routes
 │   │   ├── __init__.py
-│   │   ├── dependencies.py           # Reusable FastAPI dependencies
-│   │   ├── auth.py                   # /auth/login, /auth/register
-│   │   ├── transactions.py           # /transactions/report
-│   │   ├── students.py               # /students/performance, /student/overview
-│   │   ├── teachers.py               # /teachers/effectiveness
-│   │   ├── management.py             # /management/kpis
-│   │   └── voice.py                  # /voice/interpret
+│   │   ├── dependencies.py         # Reusable FastAPI dependencies
+│   │   ├── auth.py                 # /auth/login, /auth/register
+│   │   ├── transactions.py         # /transactions/report
+│   │   ├── students.py             # /students/performance, /student/overview
+│   │   ├── teachers.py             # /teachers/effectiveness
+│   │   ├── management.py           # /management/kpis
+│   │   └── voice.py                # /voice/interpret
 │
-├── models/                           # Pre-trained ML models (.pkl, Prophet, etc.)
+├── models/                         # Pre-trained ML models (.pkl, Prophet, etc.)
 │   ├── student_performance_model.pkl
 │   ├── dropout_risk_model.pkl
 │   └── revenue_forecast_model.pkl
 │
-├── tests/                            # Unit tests (pytest)
+├── tests/                          # Unit tests (pytest)
 │   ├── __init__.py
 │   ├── test_auth.py
 │   ├── test_students.py
 │   ├── test_ml_models.py
 │   └── test_voice.py
 │
-├── Dockerfile                        # Docker build for FastAPI app
-├── docker-compose.yml                # Compose file for API + DB + Redis + Nginx
-├── init.sql                          # Optional DB init script (tables, seed data)
-├── nginx.conf                        # Optional Nginx reverse proxy
-├── .env                              # Environment variables (not committed to Git)
-├── .env.template                     # Sample .env to share
-├── requirements.txt                  # All Python dependencies
-├── README.md                         # Project documentation
-└── alembic.ini                       # Optional: Alembic for DB migrations
+├── Dockerfile                      # Docker build for FastAPI app
+├── docker-compose.yml              # Compose file for API + DB + Redis + Nginx
+├── init.sql                        # Optional DB init script (tables, seed data)
+├── nginx.conf                      # Optional Nginx reverse proxy
+├── .env                            # Environment variables (not committed to Git)
+├── .env.template                   # Sample .env to share
+├── requirements.txt                # All Python dependencies
+├── README.md                       # Project documentation
+└── alembic.ini                     # Optional: Alembic for DB migrations
 
 
 
